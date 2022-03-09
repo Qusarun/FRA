@@ -4,10 +4,6 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-typedef struct {
-    double d;
-} FRA;
-
-bool roll(double chance, FRA* fra);
+bool roll(double chance, double* d);
 
 #endif
