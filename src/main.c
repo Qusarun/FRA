@@ -7,10 +7,9 @@
 
 int main(void) {
     srand(time(0));
-    FRA* fra = calloc(1, sizeof(FRA));
-    fra->d = 0;
+    double d = 0;
     int a = 0;
-    for (int i = 0; i < SAMPLES; i++) { if (roll(CHANCE, fra)) a++; }
+    for (int i = 0; i < SAMPLES; i++) { if (roll(CHANCE, &d)) a++; }
     printf("%.0f%%\n", a / (float) SAMPLES * 100);
     return 0;
 }
